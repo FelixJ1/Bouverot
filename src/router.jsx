@@ -4,17 +4,14 @@ import Home from './pages/Home'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
+import Deals from './pages/Deals'
+import About from './pages/About'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
     errorElement: <NotFound />,
-    children: [
-      { index: true, element: <Home /> },
-      { path: 'services', element: <Services /> },
-      { path: 'contact', element: <Contact /> },
-    ],
   },
 ])
 

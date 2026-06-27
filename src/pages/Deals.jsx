@@ -1,0 +1,85 @@
+import React, { useEffect, useRef } from 'react';
+import { EditableText } from '../components/EditableText';
+import './Deals.css';
+
+export default function Deals() {
+  const MAX_COLS = 5
+  const gridRef = useRef(null)
+
+  useEffect(() => {
+    const count = 9
+    let cols = 1
+    for (let i = 1; i <= Math.min(count, MAX_COLS); i++) {
+      if (count % i === 0) cols = i
+    }
+    gridRef.current.style.gridTemplateColumns = `repeat(${cols}, 1fr)`
+  }, [])
+
+  return (
+    <div className="deals-page">
+      <EditableText id="deals-heading" as="h2">Deals</EditableText>
+      <div className="deals-content">
+        <div className="deals-text">
+          <EditableText id="deals-title" as="h1">Landmark deals across four decades of market cycles</EditableText>
+          <EditableText id="deals-description" as="p">We are a senior-level advisory firm that provides independent advice to clients in the energy and infrastructure sectors. Our team has extensive experience in structuring and executing complex transactions, and we are committed to delivering the best possible outcomes for our clients.</EditableText>
+        </div>
+        <div className="deals-grid" ref={gridRef}>
+          <div className="deals-page-stat">
+            <EditableText id="deal-1-date" as="p">1999-2001</EditableText>
+            <EditableText id="deal-1-value" as="h2">100+</EditableText>
+            <EditableText id="deal-1-title" as="h3">Deals Structured over landmark deals, four decades</EditableText>
+            <EditableText id="deal-1-desc" as="p">Something or other</EditableText>
+          </div>
+          <div className="deals-page-stat">
+            <EditableText id="deal-2-date" as="p">1999-2001</EditableText>
+            <EditableText id="deal-2-value" as="h2">100+</EditableText>
+            <EditableText id="deal-2-title" as="h3">Deals Structured over landmark deals, four decades</EditableText>
+            <EditableText id="deal-2-desc" as="p">Something or other</EditableText>
+          </div>
+          <div className="deals-page-stat">
+            <EditableText id="deal-3-date" as="p">1999-2001</EditableText>
+            <EditableText id="deal-3-value" as="h2">100+</EditableText>
+            <EditableText id="deal-3-title" as="h3">Deals Structured over landmark deals, four decades</EditableText>
+            <EditableText id="deal-3-desc" as="p">Something or other</EditableText>
+          </div>
+          <div className="deals-page-stat">
+            <EditableText id="deal-4-date" as="p">1999-2001</EditableText>
+            <EditableText id="deal-4-value" as="h2">100+</EditableText>
+            <EditableText id="deal-4-title" as="h3">Deals Structured over landmark deals, four decades</EditableText>
+            <EditableText id="deal-4-desc" as="p">Something or other</EditableText>
+          </div>
+          <div className="deals-page-stat">
+            <EditableText id="deal-5-date" as="p">1999-2001</EditableText>
+            <EditableText id="deal-5-value" as="h2">100+</EditableText>
+            <EditableText id="deal-5-title" as="h3">Deals Structured over landmark deals, four decades</EditableText>
+            <EditableText id="deal-5-desc" as="p">Something or other</EditableText>
+          </div>
+          <div className="deals-page-stat">
+            <EditableText id="deal-6-date" as="p">1999-2001</EditableText>
+            <EditableText id="deal-6-value" as="h2">100+</EditableText>
+            <EditableText id="deal-6-title" as="h3">Deals Structured over landmark deals, four decades</EditableText>
+            <EditableText id="deal-6-desc" as="p">Something or other</EditableText>
+          </div>
+          <div className="deals-page-stat">
+            <EditableText id="deal-7-date" as="p">1999-2001</EditableText>
+            <EditableText id="deal-7-value" as="h2">100+</EditableText>
+            <EditableText id="deal-7-title" as="h3">Deals Structured over landmark deals, four decades</EditableText>
+            <EditableText id="deal-7-desc" as="p">Something or other</EditableText>
+          </div>
+          <div className="deals-page-stat">
+            <EditableText id="deal-8-date" as="p">1999-2001</EditableText>
+            <EditableText id="deal-8-value" as="h2">100+</EditableText>
+            <EditableText id="deal-8-title" as="h3">Deals Structured over landmark deals, four decades</EditableText>
+            <EditableText id="deal-8-desc" as="p">Something or other</EditableText>
+          </div>
+          <div className="deals-page-stat">
+            <EditableText id="deal-9-date" as="p">1999-2001</EditableText>
+            <EditableText id="deal-9-value" as="h2">100+</EditableText>
+            <EditableText id="deal-9-title" as="h3">Deals Structured over landmark deals, four decades</EditableText>
+            <EditableText id="deal-9-desc" as="p">Something or other</EditableText>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}

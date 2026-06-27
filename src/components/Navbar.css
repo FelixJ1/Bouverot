@@ -1,21 +1,26 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    background: #1F305E;
+    background: transparent;
     color: white;
-    padding: 1.5rem;
+    padding: 2rem 1.5rem 1.5rem;
     margin: 0;
     justify-content: space-between;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     position: sticky;
     top: 0;
     z-index: 100;
+    transition: background 0.5s ease-in-out;
+}
+
+.navbar.scrolled {
+    background: #1F305E;
 }
 
 .nav-links {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 1.25rem;
 }
 
 nav a {
@@ -23,5 +28,9 @@ nav a {
 }
 
 nav a.active {
+    color: white;
+}
+
+nav a:hover {
     color: white;
 }

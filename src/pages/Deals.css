@@ -1,0 +1,107 @@
+.deals-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: #1F305E;
+}
+
+.deals-page h2 {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    color: #ffffff;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.deals-page h1 {
+    margin: 1.5rem;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 500;
+    margin-top: 0;
+    align-self: flex-start;
+    max-width: 800px;
+}
+
+.deals-grid {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+    gap: 1px;
+    padding: 1px;
+    margin: 2rem;
+    background: #fff;
+    width: auto;
+    align-self: center;
+}
+
+.deals-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+.deals-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.deals-text p {
+    margin: 0.5rem 1.5rem;
+    color: #ffffff;
+    text-align: left;
+    max-width: 800px;
+}
+
+.deals-page-stat {
+    max-width: 400px;
+    margin: 0 0.5px;
+    padding: clamp(0.5rem, 100%, 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: white;
+    background: #1F305E;
+}
+
+.deals-page-stat h2 {
+    margin: 0.5rem 0 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.deals-page-stat h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.deals-page-stat p {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+@media (max-width: 800px) {
+    .deals-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .deals-page-stat {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+}
