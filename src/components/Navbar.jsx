@@ -55,7 +55,10 @@ export default function Navbar() {
           <a
             key={id}
             href={`#${id}`}
-            className={activeSection === id ? 'active' : ''}
+            className={[
+              activeSection === id ? 'active' : '',
+              id === 'contact' ? 'contact-link' : ''
+            ].join(' ').trim()}
             onClick={(e) => handleClick(e, id)}
           >
             {label}

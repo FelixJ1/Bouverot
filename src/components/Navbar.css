@@ -34,3 +34,12 @@ nav a.active {
 nav a:hover {
     color: white;
 }
+
+@media (max-width: 500px) {
+  .nav-links a {
+    display: none;
+  }
+  .nav-links a.contact-link {
+    display: block;
+  }
+}

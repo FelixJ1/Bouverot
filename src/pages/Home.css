@@ -1,6 +1,6 @@
 body {
     background-image: url('../assets/ZEFmasked.jpeg');
-    background-size: max(100vw, 80rem);
+    background-size: max(100vw, 90rem);
     background-position: top;
     background-repeat: no-repeat;
 }
@@ -39,7 +39,12 @@ body {
     max-width: 800px;
 }
 
-.home-page-top-section button {
+.home-page-top-section a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
     width: fit-content;
     background: #d3b769;
     color: #ffffff;
@@ -52,7 +57,7 @@ body {
     font-family: 'Merriweather';
 }
 
-.home-page-top-section button:hover {
+.home-page-top-section a:hover {
     background: #c2a85e;
 }
 

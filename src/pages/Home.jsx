@@ -29,9 +29,12 @@ export default function Home() {
               <EditableText id="stat-4-label" as="p">Clients Served</EditableText>
             </div>
           </div>
-          <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
-            <EditableText id="cta-button-text" as="span">Get in touch</EditableText>
-          </button>
+          <a href="https://www.linkedin.com/in/guillaumebouverot" target="_blank" rel="noopener noreferrer">
+            <EditableText id="cta-button-text" as="p">Get in touch</EditableText>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="butt" strokeLinejoin="miter">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
