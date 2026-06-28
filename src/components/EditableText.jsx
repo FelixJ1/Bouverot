@@ -1,6 +1,6 @@
 import { useEditMode } from '../context/EditModeContext';
 
-export function EditableText({ id, children, as: Tag = 'p' }) {
+export function EditableText({ id, children, as: Tag = 'p', className = '' }) {
   const { editing, trackChange } = useEditMode();
 
   return (
@@ -14,6 +14,7 @@ export function EditableText({ id, children, as: Tag = 'p' }) {
         }
     }
       style={editing ? { outline: '2px dashed #ffffff6e', borderRadius: '4px' } : {}}
+      className={className}
     >
       {children}
     </Tag>
