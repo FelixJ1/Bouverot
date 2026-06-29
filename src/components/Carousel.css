@@ -1,7 +1,74 @@
-.carousel-item {
-  height: 5rem;
+.carousel-wrapper {
+  width: 100%;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+.carousel-grid-container {
+  width: 100%;
+}
+
+/* 5 logos in a single row */
+.carousel-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+}
+
+.carousel-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  border-right: 1px solid #e0e0e0;
+}
+
+.carousel-cell:last-child {
+  border-right: none;
+}
+
+.carousel-logo {
+  height: 4.5rem;
   max-width: 8rem;
   object-fit: contain;
-  margin: 0 1.5rem;
-  filter: grayscale(50%)
+  filter: grayscale(100%) opacity(0.45);
+  transition: filter 0.3s ease;
+}
+
+.carousel-cell:hover .carousel-logo {
+  filter: grayscale(0%) opacity(1);
+}
+
+/* Slide animation */
+@keyframes slideInFromRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideOutToLeft {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(-40px); }
+}
+
+.slide-in {
+  animation: slideInFromRight 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.slide-out {
+  animation: slideOutToLeft 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Responsive: 3-col on narrow screens */
+@media (max-width: 640px) {
+  .carousel-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .carousel-cell:nth-child(3n) {
+    border-right: none;
+  }
+
+  .carousel-cell:not(:nth-child(3n)) {
+    border-right: 1px solid #e0e0e0;
+  }
 }

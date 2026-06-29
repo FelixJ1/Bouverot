@@ -40,7 +40,6 @@ export default function Deals() {
       '/CarouselLogos/Orlen.svg',
       '/CarouselLogos/shell.png',
       '/CarouselLogos/TotalEnergies.png',
-      '/CarouselLogos/uniper.png',
   ];
 
   const combinedCarousel = [...topCarousel, ...bottomCarousel];
@@ -51,7 +50,6 @@ export default function Deals() {
       <div className="deals-content">
         <div className="deals-text">
           <EditableText id="deals-title" as="h1">More than USD 40bn raised across 30+ transactions</EditableText>
-          {/* <EditableText id="deals-description" as="p">We are a senior-level advisory firm that provides independent advice to clients in the energy and infrastructure sectors. Our team has extensive experience in structuring and executing complex transactions, and we are committed to delivering the best possible outcomes for our clients.</EditableText> */}
         </div>
         <div className="deals-grid-wrapper">
           <div className="deals-grid" ref={gridRef}>
@@ -167,8 +165,16 @@ export default function Deals() {
           </div>
         </div>
         </div>
-        <Carousel images={combinedCarousel}/>
+        <div className="carousel-container">
+          <h1 style={{color:'#1F305E'}}>
+            Clients we've worked with
+          </h1>
+        <div className="carousel-top-wrapper">
+          <Carousel images={combinedCarousel}/>
+        </div>
+        </div>
       </div>
+      <div style={{width:'100%', height: '1px', background: '#e0e0e0'}}/>
     </div>
   )
 }
