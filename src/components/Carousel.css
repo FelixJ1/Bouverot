@@ -1,6 +1,7 @@
 .carousel-item {
-  height: 3rem;
-  max-width: 9rem;
+  height: 5rem;
+  max-width: 8rem;
   object-fit: contain;
   margin: 0 1.5rem;
+  filter: grayscale(50%)
 }

@@ -9,15 +9,13 @@ export default function Carousel({ images }) {
   const bottomImages = images.slice(half);
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%' }}>
-      {/* Top row — scrolls left */}
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%', marginTop: '2rem' }}>
       <Marquee speed={50} gradient={false} direction="left">
         {topImages.map((src, i) => (
           <img key={i} src={src} alt={`Logo ${i + 1}`} className="carousel-item" />
         ))}
       </Marquee>
 
-      {/* Bottom row — scrolls right */}
       <Marquee speed={50} gradient={false} direction="left">
         {bottomImages.map((src, i) => (
           <img key={i} src={src} alt={`Logo ${i + 1}`} className="carousel-item" />

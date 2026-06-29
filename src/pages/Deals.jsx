@@ -17,27 +17,30 @@ export default function Deals() {
   }, [])
 
     const topCarousel = [
-  '/SponsorLogos/Linklaters.jpeg',
-  '/SponsorLogos/Barclays.png',
-  '/SponsorLogos/Wyman.jpeg',
-  '/SponsorLogos/CliffordChance.webp',
-  '/SponsorLogos/JaneStreet.png',
-  '/SponsorLogos/BlackRock.webp',
-  '/SponsorLogos/PJT.png',
-  '/SponsorLogos/DEShaw.webp',
-  '/SponsorLogos/Fidelity.png'
+      '/CarouselLogos/ADNOC.png',
+      '/CarouselLogos/aramco.png',
+      '/CarouselLogos/CNOOC.png',
+      '/CarouselLogos/eni.png',
+      '/CarouselLogos/KOSM.png',
+      '/CarouselLogos/NEOM.png',
+      '/CarouselLogos/OCP.png',
+      '/CarouselLogos/Petrose.webp',
+      '/CarouselLogos/SMH.png',
+      '/CarouselLogos/Tullow.png',
+      '/CarouselLogos/UNOC.webp',
   ];
 
   const bottomCarousel = [
-  '/SponsorLogos/BCG.webp',
-  '/SponsorLogos/Dartmouth.png',
-  '/SponsorLogos/KPMG.png',
-  '/SponsorLogos/Oaktree.webp',
-  '/SponsorLogos/CreditSuisse.png',
-  '/SponsorLogos/Point72.png',
-  '/SponsorLogos/DandB.webp',
-  '/SponsorLogos/BNP.webp',
-  '/SponsorLogos/Houlihan.png'
+      '/CarouselLogos/AL.png',
+      '/CarouselLogos/bp.png',
+      '/CarouselLogos/enel.png',
+      '/CarouselLogos/GE.svg',
+      '/CarouselLogos/national.png',
+      '/CarouselLogos/NNPC.png',
+      '/CarouselLogos/Orlen.svg',
+      '/CarouselLogos/shell.png',
+      '/CarouselLogos/TotalEnergies.png',
+      '/CarouselLogos/uniper.png',
   ];
 
   const combinedCarousel = [...topCarousel, ...bottomCarousel];
