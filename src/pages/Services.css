@@ -12,6 +12,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
+    gap: 2rem;
 }
 
 .services-page h2 {
@@ -61,7 +62,7 @@
 }
 
 .services-first-row {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -69,10 +70,18 @@
 }
 
 .services-second-row {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.services-third-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
@@ -83,6 +92,29 @@
     justify-content: center;
     align-items: center;
     padding: 0 4rem;
+}
+
+.services-explanation-box.row2 {
+    padding: 2rem;
+}
+
+.services-explanation-box.row3 {
+    padding: 2rem 0 2rem 20%;
+}
+
+.pentagon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    padding: 2rem 0 1rem 0;
+}
+
+.pentagon-image {
+    object-fit: contain;
+    width: 10rem;
+    height: 10rem;
 }
 
 .services-explanation-text {
