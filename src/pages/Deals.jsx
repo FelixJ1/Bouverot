@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { EditableText } from '../components/EditableText';
+import Carousel from '../components/Carousel';
 import './Deals.css';
 
 export default function Deals() {
@@ -15,6 +16,32 @@ export default function Deals() {
     gridRef.current.style.gridTemplateColumns = `repeat(${cols}, 1fr)`
   }, [])
 
+    const topCarousel = [
+  '/SponsorLogos/Linklaters.jpeg',
+  '/SponsorLogos/Barclays.png',
+  '/SponsorLogos/Wyman.jpeg',
+  '/SponsorLogos/CliffordChance.webp',
+  '/SponsorLogos/JaneStreet.png',
+  '/SponsorLogos/BlackRock.webp',
+  '/SponsorLogos/PJT.png',
+  '/SponsorLogos/DEShaw.webp',
+  '/SponsorLogos/Fidelity.png'
+  ];
+
+  const bottomCarousel = [
+  '/SponsorLogos/BCG.webp',
+  '/SponsorLogos/Dartmouth.png',
+  '/SponsorLogos/KPMG.png',
+  '/SponsorLogos/Oaktree.webp',
+  '/SponsorLogos/CreditSuisse.png',
+  '/SponsorLogos/Point72.png',
+  '/SponsorLogos/DandB.webp',
+  '/SponsorLogos/BNP.webp',
+  '/SponsorLogos/Houlihan.png'
+  ];
+
+  const combinedCarousel = [...topCarousel, ...bottomCarousel];
+
   return (
     <div className="deals-page">
       <EditableText id="deals-heading" as="h2">DEALS</EditableText>
@@ -23,9 +50,10 @@ export default function Deals() {
           <EditableText id="deals-title" as="h1">More than USD 40bn raised across 30+ transactions</EditableText>
           {/* <EditableText id="deals-description" as="p">We are a senior-level advisory firm that provides independent advice to clients in the energy and infrastructure sectors. Our team has extensive experience in structuring and executing complex transactions, and we are committed to delivering the best possible outcomes for our clients.</EditableText> */}
         </div>
-        <div className="deals-grid" ref={gridRef}>
+        <div className="deals-grid-wrapper">
+          <div className="deals-grid" ref={gridRef}>
           <div className="deals-page-stat">
-            <EditableText id="deal-1-date" as="p" className="top-line-text">LNG · UK · 2026</EditableText>
+            <EditableText id="deal-1-date" as="p" className="top-line-text">Infrastructure · UK · 2026</EditableText>
             <EditableText id="deal-1-value" as="h2">GBP 1.66bn</EditableText>
             <EditableText id="deal-1-title" as="h3">Grain LNG - Sale to Centrica & Energy Capital Partners</EditableText>
             <EditableText id="deal-1-desc" as="p" className="bottom-line-text">National Grid · SMBC Advisory</EditableText>
@@ -83,10 +111,10 @@ export default function Deals() {
               Renewables · Morocco · 2011
             </EditableText>
             <EditableText id="deal-6-value" as="h2">
-              USD 1bn
+              USD 850m
             </EditableText>
             <EditableText id="deal-6-title" as="h3">
-              [placeholder] - Financing of a solar PV project
+              Noor I - Financing of a CSP project
             </EditableText>
             <EditableText id="deal-6-desc" as="p" className="bottom-line-text">
               Masen · Citigroup Advisory
@@ -117,7 +145,7 @@ export default function Deals() {
               Yemen LNG - Financing of upstream and LNG plant
             </EditableText>
             <EditableText id="deal-8-desc" as="p" className="bottom-line-text">
-              TotalEnergies, Hunt Oil et al. · Citigroup Advisory
+              TotalEnergies, Hunt Oil <span style={{fontStyle:'italic'}}>et al.</span> · Citigroup Advisory
             </EditableText>
           </div>
           <div className="deals-page-stat">
@@ -135,6 +163,8 @@ export default function Deals() {
             </EditableText>
           </div>
         </div>
+        </div>
+        <Carousel images={combinedCarousel}/>
       </div>
     </div>
   )

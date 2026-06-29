@@ -5,11 +5,13 @@ export default function About() {
   return (
     <div className="about-page">
       <EditableText id="about-heading" as="h2">ABOUT</EditableText>
+      <div className="about-title-wrapper">
+      <EditableText id="about-title" as="h1">23+ years experience advising clients on project structuring & financing</EditableText>
+      </div>
       <div className="about-content">
         <div className="about-text">
-          <EditableText id="about-title" as="h1">23+ years experience advising clients on project structuring & financing</EditableText>
           <EditableText id="about-p1" as="p">
-            Guillaume Bouverot founded Infrastructure and Energy Finance Consulting Ltd in 2026 to provide independent, deal-tested project structuring and finance advisory services to developers and investors operating across the energy and infrastructure sectors.
+            Guillaume Bouverot founded <strong>Infrastructure and Energy Finance Consulting Ltd</strong> in 2026 to provide independent, deal-tested project structuring and finance advisory services to developers and investors operating across the energy and infrastructure sectors.
           </EditableText>
           <EditableText id="about-p2" as="p">
             While being employed by SMBC, JPMorgan and Citigroup, Guillaume worked on more than 30 advisory and arranging mandates across multiple sectors in both developed and emerging/frontier markets. The size of the projects ranged from under USD 500m to more than USD 10bn. He has been involved at every step of the process, from the earliest commercial structuring conversations and bankability assessments right through to financial close. This breadth of transactional experience provides clients with practical guidance grounded in how bankable projects are structured and debt transactions are executed.          </EditableText>

@@ -1,0 +1,27 @@
+.services-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: #f7f5f0;
+}
+
+.services-page h2 {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    color: #1F305E;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'Inter';
+}
+
+.services-page h1 {
+    margin: 1.5rem 1.5rem 1.5rem 4rem;
+    color: #1F305E;
+    text-align: left;
+    font-weight: 600;
+    margin-top: 0;
+    align-self: flex-start;
+    font-family: 'Times New Roman', Times, serif;
+}

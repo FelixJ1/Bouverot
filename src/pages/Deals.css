@@ -9,10 +9,10 @@
 .deals-page h2 {
     margin-top: 2rem;
     margin-left: 4rem;
-    color: #ffffff;
+    color: #B99645;
     text-align: left;
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 0.9rem;
+    font-weight: 600;
     font-family: 'Inter';
 }
 
@@ -25,18 +25,19 @@
     align-self: flex-start;
     max-width: 800px;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
 }
 
 .deals-grid {
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
-    gap: 0.5px;
-    margin: 1rem 2rem 2rem;
+    gap: 0.6px;
+    margin: 0 4rem;
     background: #ffffff3e;
     width: auto;
     align-self: center;
-    padding: 0.5px;
+    padding: 0.6px;
 }
 
 .deals-content {
@@ -63,7 +64,6 @@
 }
 
 .deals-page-stat {
-    max-width: 400px;
     padding: clamp(0.5rem, 100%, 2rem);
     display: flex;
     flex-direction: column;
@@ -71,18 +71,20 @@
     justify-content: flex-start;
     color: white;
     background: #1F305E;
+    gap: 0.5rem;
 }
 
 .deals-page-stat h2 {
-    margin: 0.5rem 0 0;
+    margin: 0;
     font-size: 2rem;
     font-weight: 600;
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
+    color: #fff;
 }
 
 .deals-page-stat h3 {
-    margin: 0 0 0.5rem;
+    margin: 0;
     font-size: 1rem;
     font-weight: 500;
     text-align: left;
@@ -92,7 +94,6 @@
 .deals-page-stat p {
     margin: 0;
     font-size: 0.75rem;
-    font-weight: 300;
     font-family: 'Inter';
     text-align: left;
 }
@@ -100,10 +101,16 @@
 .top-line-text {
     color: #B99645;
     text-transform: capitalize;
+    font-weight: 600;
 }
 
 .bottom-line-text {
     color: #808080;
+    font-weight: 300;
+}
+
+.deals-grid-wrapper {
+    width: 100%;
 }
 
 @media (max-width: 800px) {
