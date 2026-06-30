@@ -86,6 +86,7 @@
 .list-item-text p {
     margin: 0;
     color: rgb(190, 190, 190);
+    font-size: 1.25rem;
 }
 
 .contact-details-list-item:hover .list-item-icon, .contact-details-list-item:hover .list-item-text p {
@@ -109,4 +110,22 @@
     width: 30%;
     margin: 0 4rem;
     border: 2px #fff solid;
+}
+
+.contact-button {
+    border: none;
+    background: none;
+}
+
+.copied-message {
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: 'Inter';
+    color: #ffffff;
+    margin-left: 2rem;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
 }
