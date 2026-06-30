@@ -47,9 +47,7 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div style={{ display: 'flex', flexDirection: 'row', fontWeight: '700' }}>
-        ZEF
-      </div>
+      <img src="./IEF-full.png" className='navbar-logo'/>
       <div className="nav-links">
         {links.map(({ label, id }) => (
           <a

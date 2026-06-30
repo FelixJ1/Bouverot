@@ -16,6 +16,11 @@
     font-family: 'Inter';
 }
 
+.navbar-logo {
+    object-fit: contain;
+    height: 3rem;
+}
+
 .navbar.scrolled {
     background: #1F305E;
 }

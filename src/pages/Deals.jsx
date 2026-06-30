@@ -73,7 +73,7 @@ export default function Deals() {
               USD 5bn
             </EditableText>
             <EditableText id="deal-3-title" as="h3">
-              EACOP - Crude oil pipeline financing
+              EACOP - Financing of a cross-border heated crude oil pipeline
             </EditableText>
             <EditableText id="deal-3-desc" as="p" className="bottom-line-text">
               TotalEnergies, CNOOC, UNOC, TPDC · SMBC Advisory
@@ -87,7 +87,7 @@ export default function Deals() {
               USD 2.5bn
             </EditableText>
             <EditableText id="deal-4-title" as="h3">
-              Azule Energy - Pre-Export Financing of upstream joint venture
+              Azule Energy - Pre-export financing of an upstream joint venture
             </EditableText>
             <EditableText id="deal-4-desc" as="p" className="bottom-line-text">
               bp, Eni · SMBC Advisory
@@ -143,7 +143,7 @@ export default function Deals() {
               USD 2.8bn
             </EditableText>
             <EditableText id="deal-8-title" as="h3">
-              Yemen LNG - Financing of upstream and LNG plant
+              Yemen LNG - Financing of an upstream asset and LNG plant
             </EditableText>
             <EditableText id="deal-8-desc" as="p" className="bottom-line-text">
               TotalEnergies, Hunt Oil <span style={{fontStyle:'italic'}}>et al.</span> · Citigroup Advisory
@@ -157,7 +157,7 @@ export default function Deals() {
               USD 200m
             </EditableText>
             <EditableText id="deal-9-title" as="h3">
-              Hamma Water Desalination - Financing of water desalination plant
+              Hamma Water Desalination - Financing of a water desalination plant
             </EditableText>
             <EditableText id="deal-9-desc" as="p" className="bottom-line-text">
               GE, Sonatrach, Sonelgaz · Citigroup Advisory
@@ -166,8 +166,8 @@ export default function Deals() {
         </div>
         </div>
         <div className="carousel-container">
-          <h1 style={{color:'#1F305E'}}>
-            Clients we've worked with
+          <h1 style={{color:'#1F305E', maxWidth:'600px'}}>
+            Clients we've had the pleasure of working with
           </h1>
         <div className="carousel-top-wrapper">
           <Carousel images={combinedCarousel}/>

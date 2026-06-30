@@ -29,7 +29,10 @@ export default function Home() {
               <EditableText id="stat-4-label" as="p">Deal of the Year Awards</EditableText>
             </div>
           </div>
-          <a href="https://www.linkedin.com/in/guillaumebouverot" target="_blank" rel="noopener noreferrer">
+          <a
+            href="#contact"
+            onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }) }}
+          >
             <EditableText id="cta-button-text" as="p">Get in touch</EditableText>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="butt" strokeLinejoin="miter">
               <polyline points="9 18 15 12 9 6" />
