@@ -131,3 +131,37 @@
     max-width: 4rem;
     max-height: 4rem;
 }
+
+@media (max-width: 800px) {
+    .services-page h1, .services-page h2 {
+        margin-left: 2rem;
+    }
+
+    .services-content {
+        gap: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .services-explanation-box, .services-explanation-box.row2, .services-explanation-box.row3 {
+        padding: 1rem 2rem;
+    }
+
+    .pentagon-wrapper {
+        display: none
+    }
+
+    .services-first-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .services-second-row {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .services-third-row {
+        flex-direction: column;
+    }
+}

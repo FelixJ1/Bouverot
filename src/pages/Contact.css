@@ -129,3 +129,42 @@
     align-items: center;
     gap: 6px;
 }
+
+@media (max-width: 1000px) {
+    .contact-page p {
+        font-size: 0.9rem;
+    }
+
+    .list-item-text p {
+        font-size: 1rem;
+    }
+
+    .list-item-icon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact-page p, .contact-page h1, .contact-page h2 {
+        margin-inline: 2rem;
+    }
+
+    .contact-details-list-item p {
+        margin-inline: 0;
+    }
+
+    .contact-details-list-item {
+        margin: 0 0 0 2rem;
+        width: max-content
+    }
+
+    .contact-split-details {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 4rem;
+    }
+
+    .bouverot-image {
+        width: 50%;
+    }
+}

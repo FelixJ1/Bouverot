@@ -8,7 +8,6 @@
   width: 100%;
 }
 
-/* 5 logos in a single row */
 .carousel-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -58,17 +57,22 @@
   animation: slideOutToLeft 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Responsive: 3-col on narrow screens */
-@media (max-width: 640px) {
+@media (max-width: 1000px) {
   .carousel-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .carousel-cell:nth-child(3n) {
+  .carousel-cell:nth-child(4), .carousel-cell:nth-child(2) {
     border-right: none;
   }
 
-  .carousel-cell:not(:nth-child(3n)) {
+  .carousel-cell:nth-child(1), .carousel-cell:nth-child(3) {
     border-right: 1px solid #e0e0e0;
   }
 }

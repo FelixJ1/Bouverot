@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import './Carousel.css';
 
 export default function Carousel({ images }) {
-  const BATCH_SIZE = 5;
+  const BATCH_SIZE = window.innerWidth <= 1000 ? 4 : 5;
   const [currentPage, setCurrentPage] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
