@@ -17,7 +17,7 @@ export default function About() {
             While being employed by SMBC, JPMorgan and Citigroup, Guillaume worked on more than 30 advisory and arranging mandates across multiple sectors in both developed and emerging/frontier markets. The size of the projects ranged from under USD 500m to more than USD 10bn. He has been involved at every step of the process, from the earliest commercial structuring conversations and bankability assessments right through to financial close. This breadth of transactional experience provides clients with practical guidance grounded in how bankable projects are structured and debt transactions are executed.  
           </EditableText>
           <EditableText id="about-p3" as="p">
-            Guillaume works in English and French, and brings an engineering foundation to his financial work, holding degrees from the École Nationale Supérieure d'Électrochimie et d'Électrométallurgie de Grenoble (graduating in the top 3%) and the IFP School in Paris, alongside an MBA from London Business School.
+            Guillaume works in English and French, and brings an engineering foundation to his financial work, holding degrees from the École Nationale Supérieure d'Électrochimie et d'Électrométallurgie de Grenoble and the IFP School in Paris, alongside an MBA from London Business School.
           </EditableText>
         </div>
         <div className="about-stack">
