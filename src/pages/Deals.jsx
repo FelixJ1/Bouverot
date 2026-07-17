@@ -50,7 +50,7 @@ export default function Deals() {
             </div>
 
             <div className="deals-page-stat">
-              <p className="top-line-text">LNG · Abu Dhabi · 2026</p>
+              <p className="top-line-text">LNG · Abu Dhabi · 2025</p>
               <h2>USD 8bn</h2>
               <h3>Ruwais LNG - Liquefaction plant development</h3>
               <p className="bottom-line-text">ADNOC, bp, Mitsui, Shell, TotalEnergies · SMBC Advisory</p>
