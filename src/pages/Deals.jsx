@@ -45,7 +45,7 @@ export default function Deals() {
             <div className="deals-page-stat">
               <p className="top-line-text">Infrastructure · UK · 2026</p>
               <h2>GBP 1.66bn</h2>
-              <h3>Grain LNG - Sale to Centrica & Energy Capital Partners</h3>
+              <h3>Grain LOG - Sale to Centrica & Energy Capital Partners</h3>
               <p className="bottom-line-text">National Grid · SMBC Advisory</p>
             </div>
 
